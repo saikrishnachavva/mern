@@ -1,0 +1,25 @@
+{
+    "name": "mern-app",
+    "version": "1.0.0",
+    "description": "A MERN stack application with a React frontend and Express backend",
+    "main": "server/index.js",
+    "scripts": {
+      "start": "node server/index.js",
+      "server": "nodemon server/index.js",
+      "client": "npm start --prefix client",
+      "client-install": "npm install --prefix client",
+      "build": "cd client && npm run build && cd .. && npm install",
+      "heroku-postbuild": "npm run build"
+    },
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.21.1",
+      "mongoose": "^5.12.3",
+      "cors": "^2.8.5"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.7"
+    }
+  }
+  
